@@ -1,0 +1,38 @@
+#+PROPERTY: header-args :exports both :results output
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+
+#+TITLE: Haskell Presentation
+#+AUTHOR: Mo Kwoen
+
+* What is a haskell
+
+#+BEGIN_SRC haskell
+putStrLn "Hello World"
+#+END_SRC
+
+#+RESULTS:
+: Hello World
+
+* Quick Sort
+
+#+BEGIN_SRC haskell
+  :{
+  let quicksort :: (Ord a) => [a] -> [a]
+      quicksort [] = []
+      quicksort (x:xs) =
+        let smallerSorted = quicksort [a | a <- xs, a <= x]
+            biggerSorted = quicksort [a | a <- xs, a > x]
+        in smallerSorted ++ [x] ++ biggerSorted
+  :}
+
+  quicksort [5, 4..1]
+#+END_SRC
+
+#+RESULTS:
+: [1,2,3,4,5]
+
+* Embed Video
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dljNabciEGg" frameborder="0" allowfullscreen></iframe>
+#+END_EXPORT
