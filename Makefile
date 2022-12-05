@@ -7,3 +7,7 @@ PHONY: download
 download:
 	wget https://github.com/hakimel/reveal.js/archive/refs/tags/4.4.0.tar.gz
 	tar -zxvpf 4.4.0.tar.gz
+
+PHONY: view
+view: main.html
+	xdg-open main.html
