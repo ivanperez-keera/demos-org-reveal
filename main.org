@@ -1,5 +1,6 @@
 #+PROPERTY: header-args :exports both :results output
-#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+# #+REVEAL_ROOT: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.js
+#+REVEAL_ROOT: ./reveal.js-4.4.0/
 
 #+TITLE: Haskell Presentation
 #+AUTHOR: Mo Kwoen
